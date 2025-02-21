@@ -1,0 +1,172 @@
+@media (max-width: 1439px) {
+    .slider__wrap {
+        width: 925px;
+    }
+
+    .button__pagination:nth-child(4) {
+        display: flex;
+    }
+
+    .carret__left,
+    .carret__right {
+        display: block;
+    }
+}
+
+@media (max-width: 1400px) {
+    .slider__about {
+        justify-content: center;
+        padding: 20px 0 20px 0;
+    }
+
+    /* .slid__about.third {
+        display: none;
+    } */
+}
+
+@media (max-width: 1024px) {
+    .books__favorites {
+        justify-content: center;
+    }
+
+    .right__header {
+        flex-direction: row-reverse;
+        gap: 0 40px;
+    }
+
+    .list__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 46px 0;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        right: -100%;
+        width: 332px;
+        height: 570px;
+        margin: 0 auto;
+        padding: 111px 0;
+        background-color: var(--color-dark);
+        transition-duration: .5s;
+    }
+
+    .list__nav.open {
+        visibility: visible;
+        right: 0;
+    }
+
+    .nav__burger {
+        display: flex;
+        position: relative;
+        z-index: 2;
+    }
+
+    .profile {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav__burger.open {
+        justify-content: center;
+    }
+
+    .burger-line {
+        transition: all 0.3s;
+    }
+
+    .nav__burger.open>.burger-line:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    .nav__burger.open>.burger-line:nth-child(2) {
+        display: none;
+    }
+
+    .nav__burger.open>.burger-line:nth-child(3) {
+        transform: rotate(-45deg);
+        transform-origin: 20px 0px;
+    }
+
+    .slider__wrap {
+        width: 450px;
+    }
+
+    .button__pagination:nth-child(5) {
+        display: flex;
+    }
+}
+
+@media (max-width: 1000px) {
+    .coffe-shop__menu {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .coffe-shop_menu.right-menu {
+        width: 100%;
+    }
+
+    .info__contacts {
+        margin-bottom: 62px
+    }
+
+    .map__contacts {
+        margin: 0 auto;
+    }
+
+    .items__card {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .get__card {
+        width: 535px;
+        align-items: center;
+        gap: 40px 0;
+    }
+
+    .title-get__card,
+    .text-get__card {
+        text-align: center;
+    }
+}
+
+@media (max-width: 965px) {
+
+    .carret__left {
+        margin-right: 33px;
+    }
+
+    .carret__right {
+        margin-left: 33px;
+    }
+}
+
+
+
+@media (max-width: 765px) {
+
+    .welcom__text {
+        width: 580px;
+        padding: 35px 30px;
+    }
+
+    .seasons__favorites {
+        gap: 0 40px;
+    }
+
+    .map__contacts {
+        width: auto;
+        height: auto;
+        max-width: 698px;
+        min-width: 560px;
+        max-height: 414px;
+        min-height: 333px;
+    }
+
+    .year__footer,
+    .user__footer {
+        width: 110px;
+    }
+}
